@@ -1,10 +1,10 @@
 import React from 'react';
-import screens from './screens';
+import navigation from './navigation';
 
 const App = () => {
     return (
         <>
-            <screens.NavigationStack />
+            <navigation.NavigationStack />
         </>
     );
 };

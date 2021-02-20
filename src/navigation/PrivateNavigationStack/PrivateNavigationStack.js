@@ -5,11 +5,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { FontAwesomeIcon } from '@fortawesome/react-native-fontawesome';
 import { faHome, faUser } from '@fortawesome/free-solid-svg-icons';
 
-import HomeScreen from '../HomeScreen';
-import ProfileScreen from '../ProfileScreen';
+import screen from '../../screens';
 
 /**
- * @memberof screens
+ * @memberof Navigation
  * @name Tab
  * @description React Navigation Tab view component
  */
@@ -25,7 +24,7 @@ const PrivateNavigationStack = () => {
         <Tab.Navigator initialRouteName="home" data-testid="tabs">
             <Tab.Screen
                 name="home"
-                component={HomeScreen}
+                component={screen.HomeScreen}
                 options={{
                     tabBarTestID: 'tab-home',
                     tabBarLabel: 'Home',
@@ -40,7 +39,7 @@ const PrivateNavigationStack = () => {
             />
             <Tab.Screen
                 name="profile"
-                component={ProfileScreen}
+                component={screen.ProfileScreen}
                 options={{
                     tabBarTestID: 'tab-profile',
                     tabBarLabel: 'Profile',

@@ -1,11 +1,15 @@
 /**
- * @module Screens
+ * @module Screen
  * @memberof App
  * @description Module responsible by group all app screens
  */
 
-import NavigationStack from './NavigationStack';
+import HomeScreen from './HomeScreen';
+import ProfileScreen from './ProfileScreen';
+import LoginScreen from './LoginScreen';
 
 export default {
-    NavigationStack,
+    HomeScreen,
+    ProfileScreen,
+    LoginScreen,
 };
